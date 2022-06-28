@@ -43,6 +43,7 @@ Kill/Death will also be recorded, and a ladder board for the Top 5 K/D in the se
 ### Experience
 - `Enable` [default `true`]: Enable/disable the Experience system.
 - `Multiplier` [default `1`]: Multiply the experience gained by the player.
+- `VBlood Multiplier` [default `15`]: Multiply the experience gaine by killing VBlood.
 - `Constant` [default `0.2`]: Increase the constant component in the EXP Formula.
 [EXP Table & Formula](https://bit.ly/3npqdJw)
 
