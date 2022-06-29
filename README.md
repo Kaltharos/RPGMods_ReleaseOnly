@@ -24,27 +24,49 @@ Kill/Death will also be recorded, and a ladder board for the Top 5 K/D in the se
 
 ## Config
 ### Basic
-- `Prefix` [default `.`]: The prefix use for chat commands.
-- `DisabledCommands` [default `dim,debug,bufflist,speed,sunimmunity,sun,bloodsight,bs`]: Enter command names to disable them. Seperated by commas. Ex.: health,speed
-- `WayPoint Limits` [default `3`]: Set a waypoint limit per user.
-- `DBSave Ticks` [default `600`]: Save the player data from the mods to a json file every specified seconds.
-- `Enable SunImmunity Fix` [default `true`]: Enable the SunImmunity Fix to fix the persistance immunity issue.
-- `Enable BloodHUD Fix` [default `true`]: Enable the BloodHUD Fix to fix the persistance HUD issue.
+- `Prefix` [default `.`]\
+The prefix use for chat commands.
+- `DisabledCommands` [default `dim,debug,bufflist,speed,sunimmunity,sun,bloodsight,bs`]\
+Enter command names to disable them. Seperated by commas.
+- `WayPoint Limits` [default `3`]\
+Set a waypoint limit per user.
+- `DBSave Ticks` [default `600`]\
+Save the player data from the mods to a json file every specified seconds.
+- `Enable SunImmunity Fix` [default `true`]\
+Enable the SunImmunity Fix to fix the persistance immunity issue.
+- `Enable BloodHUD Fix` [default `true`]\
+Enable the BloodHUD Fix to fix the persistance HUD issue.
 ### PvP
-- `Announce PvP Kills` [default `true`]: Do I really need to explain this...?
-- `Enable the PvP Ladder` [default `true`]: Hmm... well it enables the ladder board in .pvp command
+- `Announce PvP Kills` [default `true`]\
+Do I really need to explain this...?
+- `Enable the PvP Ladder` [default `true`]\
+Hmm... well it enables the ladder board in .pvp command
 ### Hunter Hunted
-- `Enable` [default `true`]: Enable/disable the HunterHunted system.
-- `Heat Cooldown Value` [default `35`]: Set the reduction value for player heat for every cooldown interval.
-- `Bandit Heat Cooldown Value` [default `35`]: Set the reduction value for player heat from the bandits faction for every cooldown interval.
-- `Cooldown Interval` [default `60`]: Set every how many seconds should the cooldown interval trigger.
-- `Ambush Interval` [default `300`]: Set how many seconds player can be ambushed again since last ambush.
-- `Ambush Chance` [default `50`]: Set the percentage that an ambush may occur for every cooldown interval.
+- `Enable` [default `true`]\
+Enable/disable the HunterHunted system.
+- `Heat Cooldown Value` [default `35`]\
+Set the reduction value for player heat for every cooldown interval.
+- `Bandit Heat Cooldown Value` [default `35`]\
+Set the reduction value for player heat from the bandits faction for every cooldown interval.
+- `Cooldown Interval` [default `60`]\
+Set every how many seconds should the cooldown interval trigger.
+- `Ambush Interval` [default `300`]\
+Set how many seconds player can be ambushed again since last ambush.
+- `Ambush Chance` [default `50`]\
+Set the percentage that an ambush may occur for every cooldown interval.
 ### Experience
-- `Enable` [default `true`]: Enable/disable the Experience system.
-- `Multiplier` [default `1`]: Multiply the experience gained by the player.
-- `VBlood Multiplier` [default `15`]: Multiply the experience gaine by killing VBlood.
-- `Constant` [default `0.2`]: Increase the constant component in the EXP Formula.
+- `Enable` [default `true`]\
+Enable/disable the Experience system.
+- `Max Level` [default `80`]\
+Configure the experience system max level..
+- `Multiplier` [default `1`]\
+Multiply the experience gained by the player.
+- `VBlood Multiplier` [default `15`]\
+Multiply the experience gained from VBlood kills.
+- `EXP Lost / Death` [default `0.10`]\
+Percentage of experience the player lost for every death by NPC, no EXP is lost for PvP.
+- `Constant` [default `0.2`]\
+Increase the constant component in the EXP Formula.\
 [EXP Table & Formula](https://bit.ly/3npqdJw)
 
 ## Permissions
@@ -161,6 +183,11 @@ Removing a command from the list will automatically set it's value to `false`.
 ## More Information
 <details>
 <summary>Changelog</summary>
+
+`1.3.9`
+- Added Max Level configuration for experience system
+- Improved EXP gain algorithm
+- Minor bug fix
 
 `1.3.8`
 - Added BloodHUD command
