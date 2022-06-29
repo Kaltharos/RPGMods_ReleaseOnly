@@ -174,7 +174,7 @@ Removing a command from the list will automatically set it's value to `false`.
 &ensp;&ensp;**Admin Only Params -> `[<debug>|<value>] [<value>]`** `Display current configuration or set your heat value`\
 &ensp;&ensp;**Example:** `heat 500 500`\
 `ping`: Show you your latency to the server.\
-`pvp`: Display your PvP statistics & the current leaders in the ladder.\
+`pvp [<on>|<off>]`: Toggles PvP or display your PvP statistics & the current leaders in the ladder.\
 `experience`: Diplays your current exp and progression to the next level.\
 &ensp;&ensp;**Admin Only Params -> `[<set>] [<value>] [<PlayerName>]`** `Set your or the specified player experience value`\
 &ensp;&ensp;**Example:** `experience set 1000`\
